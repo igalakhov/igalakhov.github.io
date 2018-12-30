@@ -1,0 +1,45 @@
+{% extends "_base.html" %}
+
+{% macro render_project(project) %}
+    {% if project %}
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">{{ project["title"] }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ project["date"] }}</h6>
+            <p class="card-text">{{ project["description"] }}</p> <hr>
+            {% for link in project["links"] %}
+                 <a href="{{ link["url"] }}" class="card-link btn btn-light full-width">
+                {% if link.get("glyph") %}
+                    <i class="{{ link["glyph"] }}"></i>
+                {% endif %}
+                {{ link["name"] }}
+                </a> <br> <br>
+            {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+{% endmacro %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="display-4">My Projects</h1>
+        <hr>
+        {% for group in groups %}
+            <h1>{{ group["title"] }}</h1>
+            {% for project_num in range(0, group["members"]|length, 3) %}
+                <div class="row">
+                    <div class="col-sm-4">
+                        {{ render_project(projects[group["members"][project_num]]) }} <br>
+                    </div>
+                    <div class="col-sm-4">
+                        {{ render_project(projects[group["members"][project_num + 1]]) }} <br>
+                    </div>
+                    <div class="col-sm-4">
+                        {{ render_project(projects[group["members"][project_num + 2]]) }} <br>
+                    </div>
+                </div>
+                <br>
+            {% endfor %}
+        {% endfor %}
+    </div>
+{% endblock content %}

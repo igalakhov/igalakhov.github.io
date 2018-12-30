@@ -1,0 +1,41 @@
+{
+  "groups": [
+    {
+      "title": "Some group",
+      "members": ["sample", "another-sample","sample", "another-sample","sample"]
+    },
+    {
+      "title": "Another group",
+      "members": ["sample"]
+    }
+  ],
+  "projects": {
+    "sample": {
+      "title": "Sample Project",
+      "date": "December 2016",
+      "description": "This is a sample project description.",
+      "links": [
+        {
+          "name": "Github",
+          "url": "https://google.com",
+          "glyph": "fab fa-github"
+        },
+        {
+          "name": "Demo",
+          "url": "whatever"
+        }
+      ]
+    },
+    "another-sample": {
+      "title": "Sample Project 2",
+      "date": "December 2017",
+      "description": "This is another sample project description.",
+      "links": [
+        {
+          "name": "Other Link",
+          "url": "https://google.com"
+        }
+      ]
+    }
+  }
+}
