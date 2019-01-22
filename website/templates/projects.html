@@ -6,9 +6,17 @@
             <div class="card-body">
             <h5 class="card-title">{{ project["title"] }}</h5>
             <h6 class="card-subtitle mb-2 text-muted">{{ project["date"] }}</h6>
-            <p class="card-text">{{ project["description"] }}</p> <hr>
+                <p class="card-text">{{ project["description"] }}</p>
+                {% if project.get("links") %}
+                    <hr> {% endif %}
+                {% if project.get("awards") %}
+                    <p class="card-text">
+                        <small><i class="fa fa-trophy fa-fw"></i>
+                        {{ project["awards"] }}</p></small>
+                    <hr>
+                {% endif %}
             {% for link in project["links"] %}
-                 <a href="{{ link["url"] }}" class="card-link btn btn-light full-width">
+                <a href="{{ link["url"] }}" target="_blank" class="card-link btn btn-light full-width">
                 {% if link.get("glyph") %}
                     <i class="{{ link["glyph"] }}"></i>
                 {% endif %}
@@ -41,5 +49,8 @@
                 <br>
             {% endfor %}
         {% endfor %}
+        <hr>
+        <p>Click <a href="/static/projects.json" target="_blank">here</a>, <a href="">here</a>, and <a href="">here</a>
+            to see how these projects are being displayed</p>
     </div>
 {% endblock content %}

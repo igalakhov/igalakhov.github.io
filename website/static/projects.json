@@ -1,12 +1,28 @@
 {
   "groups": [
     {
-      "title": "Some group",
-      "members": ["sample", "another-sample","sample", "another-sample","sample"]
+      "title": "Featured",
+      "members": [
+        "stuyactivities",
+        "personal-website"
+      ]
     },
     {
-      "title": "Another group",
-      "members": ["sample"]
+      "title": "Hackathons",
+      "members": [
+        "trumper",
+        "fluentsee"
+      ]
+    },
+    {
+      "title": "Schoolwork",
+      "members": [
+      ]
+    },
+    {
+      "title": "Miscellaneous",
+      "members": [
+      ]
     }
   ],
   "projects": {
@@ -19,21 +35,84 @@
           "name": "Github",
           "url": "https://google.com",
           "glyph": "fab fa-github"
-        },
-        {
-          "name": "Demo",
-          "url": "whatever"
         }
       ]
     },
-    "another-sample": {
+    "stuyactivities": {
+      "title": "Stuyactivities",
+      "date": "July 2018 - Present",
+      "description": "Website created to assist my school with student run club management.",
+      "links": [
+        {
+          "name": "Live Site",
+          "url": "http://stuyactivities.org"
+        }
+      ]
+    },
+    "fluentsee": {
+      "title": "Fluentsee",
+      "date": "June 2018",
+      "description": "Uses google computer vision APIs in order to function as a live video and image translator.",
+      "awards": "First place - Stuyhacks June 2018",
+      "links": [
+        {
+          "name": "Devpost",
+          "url": "https://devpost.com/software/fluentsee"
+        },
+        {
+          "name": "Github repository",
+          "url": "",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "trumper": {
+      "title": "Trumper",
+      "date": "November 2018",
+      "description": "Online game that uses markov chains to generate fake tweets",
+      "awards": "First place - Kean localhackday 2018",
+      "links": [
+        {
+          "name": "Demo",
+          "url": "http://trumper.life"
+        },
+        {
+          "name": "Devpost",
+          "url": ""
+        },
+        {
+          "name": "Github repository",
+          "url": "",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "personal-website": {
+      "title": "Personal Website",
+      "date": "December 2018 - Present",
+      "description": "The website you are seeing right now. Uses as JSON file to dynamically render and display projects.",
+      "links": [
+        {
+          "name": "Github Repository",
+          "url": "https://github.com/igalakhov/igalakhov.github.io",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "sample2": {
       "title": "Sample Project 2",
-      "date": "December 2017",
+      "date": "December 2018",
       "description": "This is another sample project description.",
       "links": [
         {
-          "name": "Other Link",
-          "url": "https://google.com"
+          "name": "Github link",
+          "url": "https://google.com",
+          "glyph": "fab fa-github"
+        },
+        {
+          "name": "Gitlab",
+          "url": "",
+          "glyph": "fab fa-gitlab"
         }
       ]
     }

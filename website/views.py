@@ -1,6 +1,7 @@
-import os
-from flask import Flask, render_template, send_from_directory
 import json
+import os
+
+from flask import Flask, render_template, send_from_directory
 
 app = Flask(__name__)
 
@@ -8,8 +9,11 @@ app = Flask(__name__)
 @app.route("/")
 @app.route("/index")
 def index():
+    resume_link = "https://docs.google.com/document/d/1RNGEtHQBL5r32STsUv2dpsBG-Fo4-h3yf6CT3pW2IaU"
+
     return render_template("index.html",
-                           title="Ivan Galakhov")
+                           title="Ivan Galakhov",
+                           resume_link=resume_link)
 
 
 @app.route("/contact")
@@ -35,8 +39,6 @@ def projects():
     for group in project_groups:
         while not len(group["members"]) % NUM_PER_ROW == 0:
             group["members"].append(None)
-
-    print(project_groups)
 
     return render_template("projects.html",
                            title="My Projects",
