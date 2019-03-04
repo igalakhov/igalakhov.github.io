@@ -18,8 +18,8 @@
                       <a class="list-group-item list-group-item-action" href="/projects"><i
                               class="fas fa-briefcase fa-fw"></i> My Projects</a>
                       <a class="list-group-item list-group-item-action" href="{{ resume_link }}" target="_blank"><i
-                              class="fas fa-file fa-fw"></i> My Resume</a>
-                      <a class="list-group-item list-group-item-action" href="/contact"><i
+                              class="fas fa-file fa-fw"></i> Resume</a>
+                      <a class="list-group-item list-group-item-action" href="mailto:ivan@galakhov.me?Subject=Hi%20Ivan!" target="_top"><i
                               class="fas fa-edit fa-fw"></i> Contact</a>
                   </ul>
               </div>
@@ -27,7 +27,7 @@
                     <br>
                 </div>
               <div class="col-lg-5 my-auto">
-                  <img src="https://via.placeholder.com/2000" class="img-fluid w-100 rounded-circle" alt="">
+                  <img src="{{ url_for('static', filename='img/me.jpg') }}" class="img-fluid w-100 rounded-circle" alt="">
               </div>
                 <div class="col-lg-1 my-auto">
 

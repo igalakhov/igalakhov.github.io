@@ -24,7 +24,6 @@ def contact():
 
 @app.route("/projects")
 def projects():
-    NUM_PER_ROW = 3  # number of projects per row (no point in changing this)
 
     # open project json file and read it
     with open("website/static/projects.json") as project_file:
@@ -37,7 +36,7 @@ def projects():
     project_groups = project_dict_all["groups"]
 
     for group in project_groups:
-        while not len(group["members"]) % NUM_PER_ROW == 0:
+        while not len(group["members"]) % 3 == 0:
             group["members"].append(None)
 
     return render_template("projects.html",

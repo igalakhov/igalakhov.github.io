@@ -11,28 +11,266 @@
       "title": "Hackathons",
       "members": [
         "trumper",
-        "fluentsee"
+        "fluentsee",
+        "ueye",
+        "waev",
+        "viewr",
+        "clens",
+        "locatr",
+        "myometrics",
+        "twitterfeels",
+        "asteroids",
+        "trump-simulator"
       ]
     },
     {
       "title": "Schoolwork",
       "members": [
+        "systems",
+        "graphics",
+        "intro1-final",
+        "apcs-final"
       ]
     },
     {
       "title": "Miscellaneous",
       "members": [
+        "apollo",
+        "natselsim"
       ]
     }
   ],
   "projects": {
+    "trump-simulator": {
+      "title": "Drumph Simulator",
+      "date": "December 2016",
+      "description": "A joke game about Donald Trump's presidency",
+      "awards": "Best Game - Stuyhacks Decemeber 2016",
+      "links": [
+        {
+          "name": "Devpost",
+          "url": "https://devpost.com/software/drumph-simulator"
+        },
+        {
+          "name": "Dropbox download",
+          "url": "https://www.dropbox.com/s/tz6ufv2xgaz2q72/TrumpSimulator.zip?dl=0"
+        }
+      ]
+    },
+    "asteroids": {
+      "title": "Asteroids Remastered",
+      "date": "June 2017",
+      "description": "Remastering old games with leapmotion",
+      "awards": "3rd place - HackUCII 2017",
+      "links": [
+        {
+          "name": "Devpost",
+          "url": "https://devpost.com/software/asteroids-remastered-1rl6qw"
+        },
+        {
+          "name": "Github repository",
+          "url": "https://github.com/igalakhov/SpaceGameI",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "twitterfeels": {
+      "title": "Twitter Feels",
+      "date": "November 2017",
+      "description": "A visual representation of Twitter's emotions",
+      "awards": "1st place - HackRiverDellII 2017",
+      "links": [
+        {
+          "name": "Devpost",
+          "url": "https://devpost.com/software/twitter-feels-vti0ju"
+        },
+        {
+          "name": "Github repository",
+          "url": "https://github.com/Yash-and-Ivan/Hack-River-Dell-II",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "myometrics": {
+      "title": "Myometrics",
+      "date": "December 2017",
+      "description": "Visual representation of Myo armband data",
+      "awards": "Most innovative hack - Stuyhacks December 2017",
+      "links": [
+        {
+          "name": "Devpost",
+          "url": "https://devpost.com/software/myometrics"
+        },
+        {
+          "name": "Github repository",
+          "url": "https://github.com/Yash-and-Ivan/Stuyhacks-DEC2017",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "locatr": {
+      "title": "Locatr",
+      "date": "March 2018",
+      "description": "Consumer-based news",
+      "awards": "2nd place - MetrohacksIII 2018",
+      "links": [
+        {
+          "name": "Devpost",
+          "url": "https://devpost.com/software/locatr"
+        },
+        {
+          "name": "Github repository",
+          "url": "https://github.com/Yash-and-Ivan/hackkean4",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "clens": {
+      "title": "Clens",
+      "date": "May 2018",
+      "description": "AI water analysis",
+      "awards": "2nd place - MetrohacksIII 2018",
+      "links": [
+        {
+          "name": "Project Description",
+          "url": "https://www.hackster.io/parikhy/clens-356f92"
+        },
+        {
+          "name": "Github repository",
+          "url": "https://github.com/Yash-and-Ivan/metrohacksIII",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "viewr": {
+      "title": "Viewr",
+      "date": "October 2018",
+      "description": "Further understanding communication",
+      "awards": "1st place - HackJA October 2018",
+      "links": [
+        {
+          "name": "Devpost",
+          "url": "https://devpost.com/software/viewr"
+        },
+        {
+          "name": "Github repository",
+          "url": "https://github.com/Yash-and-Ivan/hackJA2018",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "waev": {
+      "title": "WÆV",
+      "date": "October 2018",
+      "description": "Further understanding communication",
+      "awards": "1st place - HackUCIII October 2018",
+      "links": [
+        {
+          "name": "Devpost",
+          "url": "https://devpost.com/software/waev"
+        },
+        {
+          "name": "Github repository",
+          "url": "https://github.com/Yash-and-Ivan/hackuciii",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "ueye": {
+      "title": "uEye",
+      "date": "Feburary 2019",
+      "description": "Webcam eye tracker",
+      "awards": "3rd place - MIT blueprint 2019",
+      "links": [
+        {
+          "name": "Devpost",
+          "url": "https://devpost.com/software/ueye"
+        },
+        {
+          "name": "Github repository",
+          "url": "https://github.com/igalakhov/Blueprint2019-Feb",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "natselsim": {
+      "title": "NatSelSim",
+      "date": "May 2017",
+      "description": "Natural selection simulator written in python",
+      "links": [
+        {
+          "name": "Github repository",
+          "url": "https://github.com/igalakhov/NatSelSim",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "apcs-final": {
+      "title": "APCS final project",
+      "date": "January 2018",
+      "description": "Final project for AP Computer Science",
+      "links": [
+        {
+          "name": "Github repository",
+          "url": "https://github.com/igalakhov/APCS1-final-project",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "intro1-final": {
+      "title": "Intro 1 final project",
+      "date": "January 2018",
+      "description": "Final project for introduction to computer science 1",
+      "links": [
+        {
+          "name": "Github repository",
+          "url": "https://github.com/igalakhov/intro1-FinalProject",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "apollo": {
+      "title": "Apollo",
+      "date": "May 2018",
+      "description": "Escalator tracking system for my school",
+      "links": [
+        {
+          "name": "Live Site",
+          "url": "http://apollo.stuysu.org/"
+        }
+      ]
+    },
+    "graphics": {
+      "title": "Graphics",
+      "date": "January 2019 - June 2019",
+      "description": "A collection of all my homeworks for Graphics",
+      "links": [
+        {
+          "name": "Github repository",
+          "url": "https://github.com/igalakhov/Systems",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
+    "systems": {
+      "title": "Systems",
+      "date": "September 2018 - January 2019",
+      "description": "A collection of all my homeworks for Systems level programming",
+      "links": [
+        {
+          "name": "Github repository",
+          "url": "https://github.com/igalakhov/Systems",
+          "glyph": "fab fa-github"
+        }
+      ]
+    },
     "sample": {
       "title": "Sample Project",
       "date": "December 2016",
       "description": "This is a sample project description.",
       "links": [
         {
-          "name": "Github",
+          "name": "Github repository",
           "url": "https://google.com",
           "glyph": "fab fa-github"
         }
@@ -72,10 +310,6 @@
       "description": "Online game that uses markov chains to generate fake tweets",
       "awards": "First place - Kean localhackday 2018",
       "links": [
-        {
-          "name": "Demo",
-          "url": "http://trumper.life"
-        },
         {
           "name": "Devpost",
           "url": ""
