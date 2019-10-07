@@ -1,37 +1,84 @@
 {% extends "_base.html" %}
 
 {% block content %}
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-1 my-auto">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-1 my-auto">
 
-                </div>
-              <div class="col-lg-3 my-auto">
-                  <h1 class="mb-5">
-                      Ivan Galakhov
-                      <br>
-                      <i><small><small><small>Student && Developer</small></small></small></i>
-                  </h1>
-                  <ul class="list-group">
-{#                      <a class="list-group-item list-group-item-action" href="/about"><i class="fas fa-user fa-fw"></i>#}
-{#                          About Me</a>#}
-                      <a class="list-group-item list-group-item-action" href="/projects"><i
-                              class="fas fa-briefcase fa-fw"></i> My Projects</a>
-                      <a class="list-group-item list-group-item-action" href="{{ resume_link }}" target="_blank"><i
-                              class="fas fa-file fa-fw"></i> Resume</a>
-                      <a class="list-group-item list-group-item-action" href="mailto:ivan@galakhov.me?Subject=Hi%20Ivan!" target="_top"><i
-                              class="fas fa-edit fa-fw"></i> Contact</a>
-                  </ul>
-              </div>
-                <div class="col-lg-2 my-auto">
-                    <br>
-                </div>
-              <div class="col-lg-5 my-auto">
-                  <img src="{{ url_for('static', filename='img/me.jpg') }}" class="img-fluid w-100 rounded-circle" alt="">
-              </div>
-                <div class="col-lg-1 my-auto">
-
-                </div>
             </div>
-          </div>
+            <div class="col-lg-3 my-auto">
+                <h1 class="mb-5">
+                    Ivan Galakhov
+                    <br>
+                    <i>
+                        <small>
+                            <small>
+                                <small>Student && Developer</small>
+                            </small>
+                        </small>
+                    </i>
+                </h1>
+                {#                <div class="collapse" id="collapseExample">#}
+                {#                    <div class="card card-body">#}
+                {#                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.#}
+                {#                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea#}
+                {#                        proident.#}
+                {#                    </div>#}
+                {#                </div>#}
+                <ul class="list-group">
+                    {#                      <a class="list-group-item list-group-item-action" href="/about"><i class="fas fa-user fa-fw"></i>#}
+                    {#                          About Me</a>#}
+                    <a class="list-group-item list-group-item-action" href="/projects"><i
+                            class="fas fa-briefcase fa-fw"></i> My Projects</a>
+                    {#                    <a class="list-group-item list-group-item-action disabled" href="#"><i#}
+                    {#                            class="fas fa-file fa-fw"></i> Resume (online)</a>#}
+                    {#                    <a class="list-group-item list-group-item-action" href="{{ resume_link }}" target="_blank"><i#}
+                    {#                            class="fas fa-file fa-fw"></i> Resume (pdf)</a>#}
+
+
+                    <a class="list-group-item list-group-item-action" data-toggle="collapse" href="#resume"
+                       role="button"
+                       aria-expanded="false" aria-controls="resume">
+                        <i class="fas fa-file fa-fw"></i> Resume
+                    </a>
+
+                    <!-- resume collapse -->
+                    <div class="collapse" id="resume">
+                        <br>
+                        <a class="list-group-item list-group-item-action disabled resume-stuff" href="#">online</a>
+                        <a class="list-group-item list-group-item-action resume-stuff" href="{{ resume_link }}"
+                           target="_blank">pdf</a>
+                        <br>
+                    </div>
+                    <a class="list-group-item list-group-item-action" href="/links">
+                        <i class="fas fa-link fa-fw"></i> Links</a>
+                    <a class="list-group-item list-group-item-action" href="mailto:ivan@galakhov.me?Subject=Hi%20Ivan!"
+                       target="_top"><i
+                            class="fas fa-edit fa-fw"></i> Contact</a>
+                </ul>
+            </div>
+            <div class="col-lg-2 my-auto">
+                <br>
+            </div>
+            <div class="col-lg-5 my-auto">
+                <div class="text-center" id="image-changer">
+                    This is supposed to be a photo of me, but I don't really have any good photos of myself to put on
+                    here for now. If you really want to see a photo of a (non real) person, click on this text.
+                    <br><br>
+                    Images are provided by <a href="https://thispersondoesnotexist.com">thispersondoesnotexist.com</a>.
+                </div>
+                <img style="display: none;" src="https://thispersondoesnotexist.com/image" class="img-fluid w-100 rounded-circle" id="face" alt="">
+            </div>
+            <div class="col-lg-1 my-auto">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+    $("#image-changer").click(function(){
+        $("#face").show();
+        $("#image-changer").hide();
+    });
+    </script>
 {% endblock content %}

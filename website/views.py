@@ -6,10 +6,10 @@ from flask import Flask, render_template, send_from_directory
 app = Flask(__name__)
 
 
-@app.route("/")
-@app.route("/index")
+@app.route('/')
+@app.route('/index')
 def index():
-    resume_link = "https://docs.google.com/document/d/1RNGEtHQBL5r32STsUv2dpsBG-Fo4-h3yf6CT3pW2IaU"
+    resume_link = 'https://docs.google.com/document/d/1RNGEtHQBL5r32STsUv2dpsBG-Fo4-h3yf6CT3pW2IaU/preview'
 
     return render_template("index.html",
                            title="Ivan Galakhov",
@@ -21,6 +21,10 @@ def contact():
     return render_template("contact.html",
                            title="Contact Me")
 
+@app.route('/links')
+def links():
+    return render_template('links.html',
+                           title='Links!')
 
 @app.route("/projects")
 def projects():
